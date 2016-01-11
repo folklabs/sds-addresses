@@ -8,9 +8,10 @@ twitter :
 github : https://github.com/folklabs/sds-addresses
 author : Paul Mackay
 analytics : 
-year : 2015
+year : 2016
 exclude :
   - node_modules
+  - README.md
 
 
 markdown: redcarpet

@@ -14,42 +14,25 @@
   
   addressesApp.controller("AddressesController", [
     '$scope', '$http', function($scope, $http) {
-      var ctl = this;
-      // ctl.addresses = {};
-      // ctl.addresses.data = ['foo', 'bar'];
-      // $scope.testData = ['baz'];
       $scope.addresses = {};
       $scope.addresses.data = [];
-      $scope.addresses.message = '';
-      // $scope.data = [];
-      console.log($scope.testData);
+      $scope.addresses.isShowMessage = false;
 
       $scope.addressSearch = function(item, $event) {
         var responsePromise;
-        console.log($scope.addresses.search);
-        console.log($event);
-
         var config = {
-          // method: 'POST',
-          // url: 'http://example.com',
           headers: {
            'Authorization': 'Bearer ' + AUTH_TOKEN
           },
-          // data: { test: 'test' }
         }
 
         responsePromise = $http.get(QUERY_URL + $scope.addresses.search, config);
         responsePromise.then(function(response) {
-          console.log(response);
-          console.log(response.data[0]);
           $scope.addresses.data = response.data;
-          console.log($scope.addresses.data);
-          // scope.$apply();
+          $scope.addresses.isShowMessage = (response.data.length == 0);
         }, function(response) {
-          return $scope.addresses.message = "No addresses found.";
+          return $scope.addresses.message = "Error in searching for address data.";
         });
-
-        // scope.$apply();
       };
     }
   ]);
