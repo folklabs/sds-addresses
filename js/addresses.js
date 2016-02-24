@@ -1,7 +1,7 @@
 (function() {
 
-  var QUERY_URL = "http://ec2-52-30-16-168.eu-west-1.compute.amazonaws.com:9700/locate/addresses?postcode=";
-  var AUTH_TOKEN = "rPMK0uHF5zuHmYOULEEP8uWs44g";
+  var QUERY_URL = "https://address.digitalservices.surreyi.gov.uk/addresses?postcode=";
+  var AUTH_TOKEN = "vJiSsulQe-zOobDsAWoUxr9cYfw";
 
   var addresses;
 
