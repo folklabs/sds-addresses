@@ -20,3 +20,8 @@ To make use of this service an authorization token is required (see more [here](
 ## Using the address lookup API
 
 This project uses the [locate-api](https://github.com/surreydigitalservices/locate-api) project. See the [documentation](https://github.com/surreydigitalservices/locate-api#address-lookups) for more information on doing address lookups.
+
+The endpoint for querying the SDS Addresses service is:
+
+`https://address.digitalservices.surreyi.gov.uk/addresses?postcode=kt70tj`
+
