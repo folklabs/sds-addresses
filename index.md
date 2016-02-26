@@ -56,5 +56,5 @@ keywords:
 
 
 <div class="columns large-9">
-The Surrey-i Addresses service supports AddressBase data queries. See the <a href="{{ site.baseurl }}/user-guide.html">User Guide</a> for more information.
+The Surrey-i Addresses service supports AddressBase data queries. See the <a href="{{ site.baseurl }}/documentation.html">docs</a> for more information.
 </div>
