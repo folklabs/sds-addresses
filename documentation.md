@@ -1,11 +1,11 @@
 ---
 layout: doc_notoc
-title: User Guide - SDS Addresses
+title: Documentation - SDS Addresses
 description: 
 keywords: documentation, addressbase, addresses
 ---
 
-# User Guide
+# Documentation
 
 ## Eligibility
 
