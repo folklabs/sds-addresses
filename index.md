@@ -23,38 +23,35 @@ Use the form below to search the service.
         </div>
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
-    <div ng-cloak class="row">
-        <div class="col-xs-12">
-            <div ng-show="addresses.isShowMessage" data-alert class="alert alert-warning alert-dismissible" role="alert">
+    <div ng-cloak>
+        <div ng-show="addresses.isShowMessage" data-alert class="alert alert-warning alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             No addresses could be found.
-            </div>
-        
-            <table class="table table-striped" ng-show="addresses.data.length > 0">
-                <thead>
-                    <tr>
-                    <th>Property</th>
-                    <th>Street</th>
-                    <th>Town</th>
-                    <th>Area</th>
-                    <th>Postcode</th>
-                    <th>UPRN</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="address in addresses.data">
-                    <td>{{ address.property }}</td>
-                    <td>{{ address.street }}</td>
-                    <td>{{ address.town }}</td>
-                    <td>{{ address.area }}</td>
-                    <td>{{ address.postcode }}</td>
-                    <td>{{ address.uprn }}</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
+        <table class="table table-striped" style="margin-top: 2em;" ng-show="addresses.data.length > 0">
+            <thead>
+                <tr>
+                <th>Property</th>
+                <th>Street</th>
+                <th>Town</th>
+                <th>Area</th>
+                <th>Postcode</th>
+                <th>UPRN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="address in addresses.data">
+                <td>{{ address.property }}</td>
+                <td>{{ address.street }}</td>
+                <td>{{ address.town }}</td>
+                <td>{{ address.area }}</td>
+                <td>{{ address.postcode }}</td>
+                <td>{{ address.uprn }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
   </div>
 </section>
 {% endraw %}
-<p class="text-muted">The Surrey Digital Services address API was forked from the <a href="https://github.com/alphagov/locate-api">Government Digital Service Locate API</a> and was configured by <a href="http://www.folklabs.com/">Folk Labs</a>.</p>
+<p class="text-muted" style="margin-top: 8em;">The Surrey Digital Services address API was forked from the <a href="https://github.com/alphagov/locate-api">Government Digital Service Locate API</a> and was configured by <a href="http://www.folklabs.com/">Folk Labs</a>.</p>
