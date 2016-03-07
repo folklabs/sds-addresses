@@ -1,9 +1,10 @@
+/*global angular */
 (function() {
-
+  'use strict';
   var QUERY_URL = "https://address.digitalservices.surreyi.gov.uk/addresses?postcode=";
   var AUTH_TOKEN = "vJiSsulQe-zOobDsAWoUxr9cYfw";
 
-  var addresses;
+  var addressesApp;
 
   addressesApp = angular.module('addressesApp', []);
 

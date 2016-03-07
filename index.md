@@ -9,29 +9,21 @@ keywords:
 <section ng-app="addressesApp" class="addresses-app">
   <div ng-controller="AddressesController as ctl">
     <h2>Find an address</h2>
-    <form ng-submit="addressSearch(item, $event)" class="addresses-form">
-      <label>Enter a postcode:</label>
-      <div class="input-group row">
-        <div class="columns large-9">
-          <div class="row collapse">
-            <div class="columns small-9">
-              <input type="text" name="address_search" ng-model="addresses.search"/>
-            </div>
-            <div class="columns small-3">
-              <button class="button postfix" ng-click="addressSearch(item, $event)">Search</button>
-            </div>
-          </div>
+    <form ng-submit="addressSearch(item, $event)" class="form-inline">
+        <div class="form-group">
+            <label for="address_search">Enter a postcode:</label>
+            <input type="text" name="address_search" ng-model="addresses.search" class="form-control" placeholder="e.g. GU2 4BB">
         </div>
-      </div>
+        <button type="submit" class="btn btn-primary">Search</button>
     </form>
     <div ng-cloak>
       <div class="columns large-9">
-        <div ng-show="addresses.isShowMessage" data-alert class="alert-box warning round">
+        <div ng-show="addresses.isShowMessage" data-alert class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           No addresses could be found.
-          <a href="#" class="close">&times;</a>
         </div>
       </div>
-      <table class="table" ng-show="addresses.data.length > 0">
+      <table class="table table-striped" ng-show="addresses.data.length > 0">
         <thead>
             <tr>
             <th>Property</th>
@@ -59,6 +51,6 @@ keywords:
 {% endraw %}
 
 
-<div class="columns large-9">
-The Surrey-i Addresses service supports address lookups. See the <a href="{{ site.baseurl }}/documentation.html">docs</a> for more information.
-</div>
+<p class="lead">
+    The Surrey Digital Services Addresses service supports address lookups. See the <a href="{{ site.baseurl }}/documentation.html">docs</a> for more information.
+</p>
