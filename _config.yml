@@ -7,7 +7,7 @@ email : info@folklabs.com
 twitter : 
 github : https://github.com/surreydigitalservices/sds-addresses
 author : Paul Mackay
-analytics : 
+analytics : UA-74647974-1
 year : 2016
 exclude :
   - node_modules

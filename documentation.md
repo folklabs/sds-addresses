@@ -1,5 +1,5 @@
 ---
-layout: doc_notoc
+layout: page
 title: Documentation - SDS Addresses
 description: 
 keywords: documentation, addressbase, addresses

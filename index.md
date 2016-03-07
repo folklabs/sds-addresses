@@ -1,5 +1,5 @@
 ---
-layout: doc_notoc
+layout: page
 title: SDS Addresses
 description: 
 keywords: 
