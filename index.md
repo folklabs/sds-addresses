@@ -16,7 +16,7 @@ Use the form below to search the service.
 {% raw %}
 <section ng-app="addressesApp">
   <div ng-controller="AddressesController as ctl">
-    <form ng-submit="addressSearch(item, $event)" class="form-inline">
+    <form ng-submit="addressSearch(item, $event)" class="form-inline" style="margin-bottom: 2em;">
         <div class="form-group">
             <label for="address_search">Enter a postcode:</label>
             <input type="text" name="address_search" ng-model="addresses.search" class="form-control" placeholder="e.g. GU2 4BB">
@@ -24,11 +24,10 @@ Use the form below to search the service.
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
     <div ng-cloak>
-        <div ng-show="addresses.isShowMessage" data-alert class="alert alert-warning alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div ng-show="addresses.isShowMessage" data-alert class="alert alert-warning" role="alert">
             No addresses could be found.
         </div>
-        <table class="table table-striped" style="margin-top: 2em;" ng-show="addresses.data.length > 0">
+        <table class="table table-striped" ng-show="addresses.data.length > 0">
             <thead>
                 <tr>
                 <th>Property</th>
