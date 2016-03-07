@@ -5,10 +5,17 @@ description:
 keywords: 
 ---
 
+<p class="lead">Surrey Digital Services have set up an address lookup API using <a href="https://www.ordnancesurvey.co.uk/business-and-government/products/addressbase-premium.html">OS AddressBase Premium</a> and is available for use by <abbr title="Public Sector Mapping Agreement">PSMA</abbr> signatories.</p>
+
+For more information on accessing the service please see the <a href="{{ site.baseurl }}/documentation.html">docs</a>
+
+## Demonstration
+
+Use the form below to search the service.
+
 {% raw %}
 <section ng-app="addressesApp" class="addresses-app">
   <div ng-controller="AddressesController as ctl">
-    <h2>Find an address</h2>
     <form ng-submit="addressSearch(item, $event)" class="form-inline">
         <div class="form-group">
             <label for="address_search">Enter a postcode:</label>
@@ -49,8 +56,3 @@ keywords:
   </div>
 </section>
 {% endraw %}
-
-
-<p class="lead">
-    The Surrey Digital Services Addresses service supports address lookups. See the <a href="{{ site.baseurl }}/documentation.html">docs</a> for more information.
-</p>
