@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SDS Addresses
+title: Addresses
 description: 
 keywords: 
 ---
@@ -31,23 +31,27 @@ keywords:
           <a href="#" class="close">&times;</a>
         </div>
       </div>
-      <table ng-show="addresses.data.length > 0">
-        <tr>
-          <th>Property</th>
-          <th>Street</th>
-          <th>Town</th>
-          <th>Area</th>
-          <th>Postcode</th>
-          <th>UPRN</th>
-        </tr>
-        <tr ng-repeat="address in addresses.data">
-          <td>{{ address.property }}</td>
-          <td>{{ address.street }}</td>
-          <td>{{ address.town }}</td>
-          <td>{{ address.area }}</td>
-          <td>{{ address.postcode }}</td>
-          <td>{{ address.uprn }}</td>
-        </tr>
+      <table class="table" ng-show="addresses.data.length > 0">
+        <thead>
+            <tr>
+            <th>Property</th>
+            <th>Street</th>
+            <th>Town</th>
+            <th>Area</th>
+            <th>Postcode</th>
+            <th>UPRN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="address in addresses.data">
+            <td>{{ address.property }}</td>
+            <td>{{ address.street }}</td>
+            <td>{{ address.town }}</td>
+            <td>{{ address.area }}</td>
+            <td>{{ address.postcode }}</td>
+            <td>{{ address.uprn }}</td>
+            </tr>
+        </tbody>
       </table>
     </div>
   </div>

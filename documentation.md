@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Documentation - SDS Addresses
+title: Address API Documentation
 description: 
 keywords: documentation, addressbase, addresses
 ---
