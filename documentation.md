@@ -11,7 +11,7 @@ keywords: documentation, addressbase, addresses
 
 ## Obtaining a token
 
-To make use of this service an authorization token is required (see more [here](https://github.com/surreydigitalservices/locate-api#authorization). Please contact Surrey Digital Services to obtain this.
+To make use of this service an authorization token is required (see more [here](https://github.com/surreydigitalservices/locate-api#authorization). Please [contact Surrey Digital Services to obtain this](https://docs.google.com/forms/d/1J1gtgUgMgPaB-gSEcZQtPnefQb5ePVoqycZAHHuLRpo/viewform).
 
 ## Using the address lookup API
 
