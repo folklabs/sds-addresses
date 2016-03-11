@@ -1,0 +1,97 @@
+swagger: '2.0'
+info:
+  version: '1.1.0'
+  title: Surrey Digital Services Address API  
+host: address.digitalservices.surreyi.gov.uk
+schemes:
+  - https
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    name: Authorization
+    in: header
+produces:
+  - application/json
+paths:
+  /addresses:
+    get:
+      security:
+        - Bearer: []
+      description: |
+        Gets `Address` objects.
+      parameters:
+        -
+          name: uprn
+          in: query
+          description: The UPRN (Unique Property Reference Number)
+          required: false
+          type: number
+          format: long
+        -
+          name: postcode
+          in: query
+          description: The post code to filter on
+          required: false
+          type: string
+        -
+          name: format
+          in: query
+          description: The amount and format of the data returned
+          required: false
+          type: string
+          default: presentation
+          enum:
+          - all
+          - presentation
+          - vcard
+        -
+          name: query
+          in: query
+          description: Filter by the classification of the address
+          required: false
+          type: string
+          default: all
+          enum:
+          - residential
+          - commercial
+          - residentialAndCommercial
+          - electoral
+          - all
+      responses:
+        200:
+          description: Successful response
+          schema:
+            type: array
+            items:
+              title: Address
+              description: Presentation format - the minimum data set for an address.
+              type: object
+              properties:
+                property:
+                  type: string
+                  description: Contains lowest granularity, flat numbers, house names and so on
+                street:
+                  type: string
+                  description: Street number plus street name
+                locality:
+                  type: string
+                  description: Area within the post town
+                town:
+                  type: string
+                  description: Town name
+                area:
+                  type: string
+                  description: Administrative area
+                postcode:
+                  type: string
+                  description: Postcode, formatted for display
+                uprn:
+                  type: string
+                  description: Unique Property Reference Number
+                gssCode:
+                  type: string
+                  description: Government Statistical Service code fo the Local Authority this address resides in.
+        401:
+          description: Not authorized
+        429:
+          description: Exceeded usage limit fo the day
