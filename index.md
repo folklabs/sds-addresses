@@ -24,8 +24,8 @@ Use the form below to search the service.
         <button type="submit" class="btn btn-primary">Search</button>
     </form>
     <div ng-cloak>
-        <div ng-show="addresses.isShowMessage" data-alert class="alert alert-warning" role="alert">
-            No addresses could be found.
+        <div ng-show="addresses.isShowMessage" data-alert class="alert alert-{{ addresses.messageClass }}" role="alert">
+            {{ addresses.message }}
         </div>
         <table class="table table-striped" ng-show="addresses.data.length > 0">
             <thead>
