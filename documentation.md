@@ -20,3 +20,5 @@ This project uses the [locate-api](https://github.com/surreydigitalservices/loca
 The endpoint for querying the SDS Addresses service is:
 
 `https://address.digitalservices.surreyi.gov.uk/addresses?postcode=kt70tj`
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/39edbc5d610a0db3e398)
