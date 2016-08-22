@@ -53,4 +53,6 @@ Use the form below to search the service.
   </div>
 </section>
 {% endraw %}
+<p class="text-muted" style="margin-top: 8em;">© Crown copyright and database rights 2016 Ordnance Survey, Surrey Digital Services. Use of this data is subject to terms and conditions under the Public Sector Mapping Agreement. End user licences can be granted to qualifying organisations via the token request form.<a href="https://www.ordnancesurvey.co.uk/business-and-government/public-sector/mapping-agreements/end-user-licence.html">PSMA End User Agreement</a>.</p>
+<br>
 <p class="text-muted" style="margin-top: 8em;">The Surrey Digital Services address API was forked from the <a href="https://github.com/alphagov/locate-api">Government Digital Service Locate API</a> and was configured by <a href="http://www.folklabs.com/">Folk Labs</a>.</p>
