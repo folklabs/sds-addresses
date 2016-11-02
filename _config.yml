@@ -13,7 +13,7 @@ github : https://github.com/surreydigitalservices/sds-addresses
 author : Paul Mackay
 analytics : UA-74647974-1
 year : 2016
-sd_phase : alpha
+sd_phase : live
 exclude :
   - node_modules
   - README.md
