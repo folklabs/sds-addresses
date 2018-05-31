@@ -2,7 +2,7 @@
 (function() {
   'use strict';
   var QUERY_URL = "https://address.digitalservices.surreyi.gov.uk/addresses?postcode=";
-  var AUTH_TOKEN = "vJiSsulQe-zOobDsAWoUxr9cYfw";
+  var AUTH_TOKEN = "SDS_API_KEY";
 
   var addressesApp;
 
